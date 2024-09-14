@@ -59,5 +59,18 @@ public class Operadores {
         System.out.println("\nIncremento e decremento:");
         System.out.println("Incremento (++a): " + incremento);
         System.out.println("Decremento (--b): " + decremento);
+
+        //Operador ternario
+        boolean variavel = true;
+
+        String resultado = variavel == true ? "É verdadeira" : "É falsa";
+        System.out.println(resultado);
+
+        //Metodo equals -> usado para comparar os conteudos dos objetos
+        String nome1 = "Andre";
+        String nome2 = new String("Andre");
+
+        System.out.println(nome1 == nome2); // false
+        System.out.println(nome1.equals(nome2)); // true
     }
 }
