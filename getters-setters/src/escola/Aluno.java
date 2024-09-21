@@ -4,7 +4,7 @@ public class Aluno {
     private String nome;
     private int idade;
     private String sexo;
-
+    
     public int getIdade() {
         return idade;
     }

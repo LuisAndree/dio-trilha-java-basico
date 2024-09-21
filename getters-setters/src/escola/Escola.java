@@ -10,5 +10,4 @@ public class Escola {
 
         System.out.println("nome: " + andre.getNome() + "\nidade: " + andre.getIdade() + "\nsexo: " + andre.getSexo());
     }
-
 }
