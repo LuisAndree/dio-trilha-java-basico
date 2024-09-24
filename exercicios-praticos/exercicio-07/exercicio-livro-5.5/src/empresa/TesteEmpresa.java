@@ -9,6 +9,7 @@ public class TesteEmpresa {
         Funcionario f3 = new Funcionario("Maria", "1231231", 70000, "Ti", dataDeIngresso = new Data(9, 8, 2024));
         Funcionario f4 = new Funcionario("Ticia", "1231231", 30000, "Ti", dataDeIngresso = new Data(11, 6, 2024));
         Funcionario f5 = new Funcionario("Marta", "1231231", 80000, "Ti", dataDeIngresso = new Data(15, 11, 2024));
+        Funcionario f6 = new Funcionario("Jao", "1231231", 80000, "Ti", dataDeIngresso = new Data(15, 11, 2024));
 
         Empresa empresa = new Empresa(5); 
 
@@ -17,7 +18,9 @@ public class TesteEmpresa {
         empresa.adiciona(f3);
         empresa.adiciona(f4);
         empresa.adiciona(f5);
+        empresa.adiciona(f6);
 
         empresa.mostraEmpregados(); 
+        System.out.println(empresa.contemFuncionario(f6));
     }
 }
