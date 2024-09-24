@@ -3,11 +3,9 @@ public class Main {
         Animal myDog = new Dog();
         Animal myCat = new Cat();
 
-        // Testando o comportamento do Dog
         myDog.makeSound();
         myDog.move();
 
-        // Testando o comportamento do Cat
         myCat.makeSound();
         myCat.move();
     }
