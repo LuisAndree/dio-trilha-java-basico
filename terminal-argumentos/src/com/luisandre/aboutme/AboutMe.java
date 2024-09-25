@@ -20,5 +20,7 @@ public class AboutMe {
 
         System.out.println("AOBAAA, meu nome é " + nome + " " + sobrenome);
         System.out.println("tenho " + idade + " anos e " + altura + " de altura");
+
+        scanner.close();
     }
 }
