@@ -1,6 +1,6 @@
 package banco;
 
-public class Funcionario {
+abstract class Funcionario {
     protected String nome;
     protected String cpf;
     protected double salario;
@@ -17,9 +17,7 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public double getBonificacao() {
-        return this.salario * 0.10;
-    }
+    abstract double getBonificacao();
 
     @Override
     public String toString() {

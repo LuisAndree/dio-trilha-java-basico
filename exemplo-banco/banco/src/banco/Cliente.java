@@ -1,9 +1,10 @@
 package banco;
 
-public class Cliente {
+public class Cliente implements Autenticavel {
     private String nome;
     private String sobrenome;
     private String cpf;
+    private int senha;
 
     public Cliente(String nome, String sobrenome, String cpf) {
         this.nome = nome;
@@ -34,6 +35,17 @@ public class Cliente {
             return cpf;
         } else {
             return "CPF invalido";
+        }
+    }
+
+    @Override
+    public boolean autentica(int senha) {
+        if (this.senha == senha) {
+            System.out.println("Acesso Permitido ao Ciente!");
+            return true;
+        } else {
+            System.out.println("Acesso Negado ao Cliente!");
+            return false;
         }
     }
 

@@ -50,10 +50,21 @@ public class TestesBanco {
         funcionario1.setSalario(10000);
         controle.registra(funcionario1);
 
-        Funcionario funcionario2 = new Funcionario();
-        funcionario2.setSalario(1000);
-        controle.registra(funcionario2);
+        // Funcionario funcionario2 = new Funcionario();
+        // funcionario2.setSalario(1000);
+        // controle.registra(funcionario2);
 
         System.out.println(controle.getTotalDeBonificacoes());
+
+        Autenticavel diretor = new Diretor();
+        Autenticavel gerente = new Gerente();
+        Autenticavel cliente = new Cliente("Ticia", "Cely", "611.490.743-45");
+
+        SistemaInterno si = new SistemaInterno();
+
+        si.login(diretor);
+        si.login(gerente); 
+        si.login(cliente); 
+        
     }
 }
