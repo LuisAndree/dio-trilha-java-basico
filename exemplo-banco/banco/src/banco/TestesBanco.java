@@ -39,8 +39,21 @@ public class TestesBanco {
         g1.setSalario(15000);
         System.out.println(g1.toString());
 
-        System.out.println(g1.getBonificacao());
-        
+        Funcionario funcionario = g1;
 
+        funcionario.setSalario(10000);
+        System.out.println(funcionario.getBonificacao());
+
+        ControleDeBonificacoes controle = new ControleDeBonificacoes();
+
+        Gerente funcionario1 = new Gerente();
+        funcionario1.setSalario(10000);
+        controle.registra(funcionario1);
+
+        Funcionario funcionario2 = new Funcionario();
+        funcionario2.setSalario(1000);
+        controle.registra(funcionario2);
+
+        System.out.println(controle.getTotalDeBonificacoes());
     }
 }
