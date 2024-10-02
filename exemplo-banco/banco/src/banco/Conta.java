@@ -22,12 +22,11 @@ public class Conta {
         enviaMensagemOperacao(conseguiuSacar);
     }
 
-    public void depositar(double valor) {
-        if(valor > 0){
+    public void deposita(double valor) {
+        if (valor < 0) {
+            throw new IllegalArgumentException();
+        } else {
             this.saldo += valor;
-        }
-        else {
-            System.out.println("Deposite um valor positivo!!");
         }
     }
 
