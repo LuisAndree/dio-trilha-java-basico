@@ -1,4 +1,4 @@
-package list;
+package list.biblioteca;
 
 public class Membro {
     private String nome;
