@@ -1,4 +1,4 @@
-package generics;
+package generics.loja;
 
 import java.util.HashMap;
 import java.util.Map;

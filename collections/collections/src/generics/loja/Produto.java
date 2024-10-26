@@ -1,4 +1,4 @@
-package generics;
+package generics.loja;
 
 public class Produto {
     private String nome;
